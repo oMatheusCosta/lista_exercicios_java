@@ -5,7 +5,10 @@
 let temperaturaF = prompt("qual a temperatura?")
 
 //Processamento
-let temperaturaC = (temperaturaF-32) * 5 / 9 
+function calcularTemperaturaC(valorTemp){
+    return (valorTemp - 32) * 5/9
+}
+let temperaturaC = calcularTemperaturaC(temperaturaF)
 
 //Saida 
 document.write("escrever o valor correspondente em graus celcius: <br>" , temperaturaC)
