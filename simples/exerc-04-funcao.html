@@ -9,8 +9,15 @@ let largura = prompt("Qual é a largura?")
 let comprimento = prompt("Qual é o comprimento?")
 
 //Processamento
-let metrosQuadrados = (largura * comprimento)
-let quantidadeLampadas = (metrosQuadrados * 18) / potencia
+function calcularLampadas(metrosQuadrados){
+   return (metrosQuadrados * 18) / potencia
+}
+
+function calcularMetrosQuadrados(largura, comprimento){
+   return (largura * comprimento)
+}
+let metrosQuadrados = calcularMetrosQuadrados(largura, comprimento) 
+let quantidadeLampadas = calcularLampadas(metrosQuadrados)
 
 //Saida
 document.write("Números de lâmpadas necessárias: <br>" , lampadas)
