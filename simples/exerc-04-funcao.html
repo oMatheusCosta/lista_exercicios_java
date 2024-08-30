@@ -16,6 +16,7 @@ function calcularQuantLampadas (potencia, largura, comprimento){
    let quantLampadas = quantPotenciaIluminarAmbiente / potencia 
    return quantLampadas / potencia
 }
+let quantidadeLampadas = calcularQuantLampadas(potencia, largura, comprimento)
 
 //Saida
 document.write("Quantidade de lâmpadas?", calcularQuantLampadas(potencia, largura, comprimento))
