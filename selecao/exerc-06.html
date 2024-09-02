@@ -1,0 +1,30 @@
+<meta charset="utf-8">
+<script>
+// 6. Classificando números e o zero. Instrução: Adapte o programa anterior para que ele classifique o número zero como neutro, ou seja, exiba a mensagem "zero" quando o número inserido for igual a zero.
+
+// Entrada
+let valor = prompt("Digite um valor:")
+
+// Converte o valor inserido para um número
+let numero = parseFloat(valor)
+
+// Inicializa a variável de resposta
+let resposta = ""
+
+// Processamento
+if (isNaN(numero)) {
+    resposta = "Entrada inválida. Por favor, digite um número."
+
+} else if (numero > 0) {
+    resposta = "Positivo"
+
+} else if (numero < 0) {
+    resposta = "Negativo"
+
+} else {
+    resposta = "Zero"
+}
+
+// Saída
+document.write("Resposta:" + resposta)
+</script>

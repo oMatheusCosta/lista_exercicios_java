@@ -1,0 +1,28 @@
+<meta charset="utf-8">
+<script>
+// Entrada
+let numero1 = parseFloat(document.getElementById('numero1').value);
+let numero2 = parseFloat(document.getElementById('numero2').value);
+
+// Inicializa a variável de resposta
+let resultado = "";
+
+// Processamento
+if (isNaN(numero1) || isNaN(numero2)) {
+resultado = "Por favor, insira valores numéricos válidos."
+
+} else if (numero1 > numero2) {
+resultado = "O maior número é: " + numero1
+
+} else if (numero2 > numero1) {
+    resultado = "O maior número é: " + numero2
+
+} else {
+    resultado = "Os dois números são iguais."
+}
+
+ // Saída
+document.write("resultado:" + resultado)
+</script>
+
+
