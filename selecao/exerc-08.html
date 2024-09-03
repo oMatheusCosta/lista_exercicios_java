@@ -1,0 +1,26 @@
+<meta charset="utf-8">
+<script>
+//8) Verificação da idade de voto. Declaração: Crie um programa que verifique se uma pessoa pode votar com base no ano de seu nascimento. Considere que a idade mínima para votar é de 16 anos.
+
+//Entrada
+let anoNascimento = parseInt(prompt("Qual é a sua data de nascimento?"))
+let anoAtual = parseInt(prompt("Qual é a sua idade?"))
+let idade = anoAtual - anoNascimento
+
+//Inicializa a variável de resultado
+let resultado = ""
+
+//Processamento
+if (isNaN(anoNascimento) || anoNascimento > anoAtual) {
+resultado = "Por favor, insira um ano válido."
+
+} else if (idade >= 16) {
+resultado = "Você pode votar."
+
+} else {
+resultado = "Você ainda não pode votar."
+}
+
+//Saída
+document.write("resultado:" + resultado) 
+</script>

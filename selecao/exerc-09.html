@@ -1,0 +1,32 @@
+<meta charset="utf-8">
+<script>
+//Calculando o valor das maçãs. Declaração: Uma fruteira oferece um desconto para a compra de maçãs de uma dúzia. Escreva um programa que calcule o valor total a ser pago por um cliente, considerando a quantidade de maçãs compradas e o preço unitário de acordo com a quantidade.
+  
+//Entrada
+let quantidade = parseInt(prompt("Qual é a quantidade?"))
+let precoUnitario = parseFloat(prompt("Qual é o preço unitário"))
+
+//Inicializa a variável de resultado
+let resultado = ""
+
+//Processamento
+if ((quantidade, precoUnitario) || quantidade < 1 || precoUnitario <= 0) {
+    resultado = "Por favor, insira valores válidos."
+
+} else {
+    let precoTotal
+
+//Verifica se a quantidade é uma dúzia ou mais para aplicar o desconto
+if (quantidade >= 12) {
+precoTotal = quantidade * (precoUnitario * 0.9); // 10% de desconto
+
+} else {
+    precoTotal = quantidade * precoUnitario
+}
+
+//Saída
+resultado = "O valor total a ser pago é: R$ " + precoTotal.toFixed(2);
+}
+
+document.write("resultado:" + resultado)
+</script>
