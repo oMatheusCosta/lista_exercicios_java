@@ -9,7 +9,7 @@ let comprimento = parseFloat(prompt("Qual é o comprimento (em metros)?"))
 const potenciaPorMetro = 18
 
 //Processamento
-function calcularQuantLampadas (potencia, largura, comprimento){
+function calcularQuantLampadas (potencia, largura, comprimento = 18){
    const potenciaPorMetro = 18
    let area = largura * comprimento
    let quantPotenciaIluminarAmbiente = area * potenciaPorMetro
