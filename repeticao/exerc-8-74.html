@@ -1,0 +1,21 @@
+<meta charset="utf-8">
+<script>
+//74) Faça um algoritimo que conte de 1 a 100 e a cada multiplo de 10 emita uma mensagem: "Multiplo de 10"
+
+//Processamento
+function contaMultiplos(limite = 100) {
+   let resposta = ""
+   for (let numero = 1; numero <= limite; numero++) {
+      if (numero % 10 == 0) {
+        resposta += (numero + "Múltiplo de 10 <br>:")
+      } else {
+        resposta += (numero + "<br>:")
+      }   
+   }
+   return resposta
+}
+
+//Saida
+document.write(contaMultiplos(250))
+document.write(contaMultiplos(500))
+</script>
