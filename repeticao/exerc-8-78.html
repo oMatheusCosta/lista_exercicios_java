@@ -3,23 +3,24 @@
 //78) Tem-se um conjunto de dados contendo a altura e o sexo (masculino, feminino) de 50 pessoas. Fazer um algoritmo que calcule e escreva: A maior e a menor altura do grupo; A média de altura das mulheres; O número de homens.
 
 //Entrada
-let maior = 0
-let menor = 0
-let media = 0
-let soma = 0
+let maiorAltura = 0
+let menorAltura = 0
+let mediAlturaMulheres = 0
 let quantidade = 5
 let quantHomen = 0
-let somarAltura = 0
+
 
 //Processamento
+let somaAltura
 for (let indexValor = 1; indexValor <= quantidade; indexValor++) {
     let altura = parseFloat(prompt(`Digite sua altura?`))
-    let sexo = prompt(`Qual é o seu sexo?`) 
-    if (altura > maior) {
-        maior = altura
+    let sexo = prompt(`Qual é o seu sexo [F/M]?`) 
+
+    if (altura > maiorAltura) {
+        maiorAltura = altura
     } 
-    if (altura < menor) {
-        menor = altura
+    if (altura < menorAltura) {
+        menorAltura = altura
     } 
     if (sexo == "M"){
         quantHomen++ 
@@ -28,10 +29,10 @@ for (let indexValor = 1; indexValor <= quantidade; indexValor++) {
     }
     
 }
-media = soma / quantidade
+mediAlturaMulheres = somaAltura / quantidade
 
 //Saida
-document.write(`Maior: ${maior}`)
-document.write(`Menor: ${menor}`)
+document.write(`Maior altura: ${maiorAltura} <br>`)
+document.write(`Menor altura: ${menorAltura}`)
 document.write(`Média: ${media}`) 
 </script>
