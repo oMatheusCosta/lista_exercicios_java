@@ -10,18 +10,17 @@
 let comprimento = prompt("Qual é o comprimento?")
 let largura = prompt ("Qual é a largura?")
 let altura = prompt("Qual é a altura?")
-let metrosQuadrados = (largura * comprimento)
-let caixaDeAzulejo = (metrosQuadrados * 1,5)
+const caixaDeAzulejo = 1.5
 
 //Processamento
-function AcalcularCaixaAzulejo (comprimento, largura, altura){
-   const caixaDeAzulejo = 1.5
-   let metrosQuadrado = (largura * comprimento)
-   let caixaAzulejo = (metrosQuadrado * 1,5)
-}
-
-
-
+function caixaDeAzulejo (comprimento, largura, altura) {
+    let valorComprimento = comprimento
+    let valorLargura = largura
+    let valorAltura = altura
+    let metrosQuadrados = largura * comprimento
+    let quantCaixaAzulejo = metrosQuadrados  
+    
+}   
 //Saida 
-document.write("Quantidade de caixas: <br>" , caixaDeAzulejo)
+document.write("Quantidade de caixas:" , caixaDeAzulejo)
 </script>
